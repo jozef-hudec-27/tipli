@@ -1,10 +1,76 @@
+@use 'colors' as *;
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+  outline: none;
+  border: none;
 }
 
 html,
 body {
   height: 100%;
   font-family: Roboto, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 12px 160px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $grey-3;
+  background-color: white;
+
+  &__logo {
+    width: 66px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__register,
+  &__login {
+    height: 40px;
+    padding: 0px 16px;
+  }
+
+  &__register {
+    font-weight: 500;
+  }
+
+  &__login {
+    font-weight: 400;
+  }
+}
+
+.btn {
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--primary {
+    background-color: $orange;
+    color: white;
+  }
+
+  &--secondary {
+    background-color: white;
+    color: black;
+    border: 1px solid $grey-0;
+  }
 }
