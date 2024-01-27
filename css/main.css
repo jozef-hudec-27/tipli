@@ -234,7 +234,31 @@ h6 {
   width: -moz-max-content;
   width: max-content;
 }
+.hero__rating-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.hero__rating-social-icon {
+  width: 32px;
+}
 .hero__rating {
   display: flex;
-  gap: 12px;
+  padding-top: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+.hero__rating-stars {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.hero__rating-sub {
+  font-size: 14px;
+  color: #aeaeae;
+}
+.hero__rating-sub--highlight {
+  color: #47566e;
 }

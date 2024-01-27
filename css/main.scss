@@ -225,8 +225,37 @@
     width: max-content;
   }
 
+  &__rating-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  &__rating-social-icon {
+    width: 32px;
+  }
+
   &__rating {
     display: flex;
-    gap: 12px;
+    padding-top: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  &__rating-stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  &__rating-sub {
+    font-size: 14px;
+    color: $grey-1;
+
+    &--highlight {
+      color: $grey-2;
+    }
   }
 }
