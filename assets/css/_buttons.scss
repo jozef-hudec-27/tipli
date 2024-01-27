@@ -1,0 +1,29 @@
+@use 'colors' as *;
+
+.btn {
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $orange;
+    color: white;
+
+    &:hover {
+      background-color: $orange-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: white;
+    color: black;
+    border: 1px solid $grey-0;
+
+    &:hover {
+      background-color: darken(white, 3%);
+    }
+  }
+}

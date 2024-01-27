@@ -9,6 +9,12 @@
   line-height: normal;
 }
 
+html,
+body {
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -19,12 +25,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-}
-
-html,
-body {
-  height: 100vh;
-  font-family: Roboto, sans-serif;
 }
 
 ul,
@@ -39,6 +39,30 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+}
+
+.btn {
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: #ec7700;
+  color: white;
+}
+.btn--primary:hover {
+  background-color: #e45d13;
+}
+.btn--secondary {
+  background-color: white;
+  color: black;
+  border: 1px solid #54565a;
+}
+.btn--secondary:hover {
+  background-color: #f7f7f7;
 }
 
 .navbar {
@@ -78,30 +102,6 @@ h6 {
     padding: 12px 160px;
   }
 }
-.btn {
-  border-radius: 6px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.btn--primary {
-  background-color: #ec7700;
-  color: white;
-}
-.btn--primary:hover {
-  background-color: #e45d13;
-}
-.btn--secondary {
-  background-color: white;
-  color: black;
-  border: 1px solid #54565a;
-}
-.btn--secondary:hover {
-  background-color: #f7f7f7;
-}
-
 .hero {
   display: flex;
   width: 100%;
@@ -126,12 +126,12 @@ h6 {
   color: #ec7700;
   font-weight: 700;
 }
-.hero__bullets {
+.hero__feature-bullets {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.hero__bullet {
+.hero__feature-bullet {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -285,6 +285,15 @@ h6 {
 .hero__rating-sub--highlight {
   color: #47566e;
 }
+.hero__mascot {
+  position: absolute;
+  left: 234px;
+  top: 266px;
+  width: 271px;
+  height: 271px;
+  background: url("../img/donkey.png") no-repeat;
+  display: none;
+}
 
 @media (min-width: 640px) {
   .hero {
@@ -308,7 +317,7 @@ h6 {
     gap: 40px;
     padding: 52px 0 0 0;
   }
-  .hero__bullet {
+  .hero__feature-bullet {
     font-size: 20px;
     align-items: center;
   }
@@ -322,18 +331,6 @@ h6 {
     background-color: #61a60e;
     color: white;
   }
-}
-.hero__mascot {
-  position: absolute;
-  left: 234px;
-  top: 266px;
-  width: 271px;
-  height: 271px;
-  background: url("../assets/img/donkey.png") no-repeat;
-  display: none;
-}
-
-@media (min-width: 640px) {
   .hero__mascot {
     display: block;
   }

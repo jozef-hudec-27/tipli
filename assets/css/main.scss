@@ -1,5 +1,6 @@
-@use 'reset';
 @use 'colors' as *;
+@use 'reset';
+@use 'buttons';
 
 .navbar {
   display: flex;
@@ -45,34 +46,6 @@
   }
 }
 
-.btn {
-  border-radius: 6px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-
-  &--primary {
-    background-color: $orange;
-    color: white;
-
-    &:hover {
-      background-color: $orange--dark;
-    }
-  }
-
-  &--secondary {
-    background-color: white;
-    color: black;
-    border: 1px solid $grey-0;
-
-    &:hover {
-      background-color: darken(white, 3%);
-    }
-  }
-}
-
 .hero {
   display: flex;
   width: 100%;
@@ -100,13 +73,13 @@
     }
   }
 
-  &__bullets {
+  &__feature-bullets {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 
-  &__bullet {
+  &__feature-bullet {
     display: flex;
     align-items: flex-start;
     gap: 16px;
@@ -282,6 +255,16 @@
       color: $grey-2;
     }
   }
+
+  &__mascot {
+    position: absolute;
+    left: 234px;
+    top: 266px;
+    width: 271px;
+    height: 271px;
+    background: url('../img/donkey.png') no-repeat;
+    display: none;
+  }
 }
 
 @media (min-width: 640px) {
@@ -312,7 +295,7 @@
       padding: 52px 0 0 0;
     }
 
-    &__bullet {
+    &__feature-bullet {
       font-size: 20px;
       align-items: center;
     }
@@ -329,21 +312,9 @@
       background-color: $green;
       color: white;
     }
-  }
-}
 
-.hero__mascot {
-  position: absolute;
-  left: 234px;
-  top: 266px;
-  width: 271px;
-  height: 271px;
-  background: url('../assets/img/donkey.png') no-repeat;
-  display: none;
-}
-
-@media (min-width: 640px) {
-  .hero__mascot {
-    display: block;
+    &__mascot {
+      display: block;
+    }
   }
 }
