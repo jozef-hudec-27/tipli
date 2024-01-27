@@ -1,29 +1,10 @@
+@use 'reset';
 @use 'colors' as *;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  appearance: none;
-  outline: none;
-  border: none;
-}
-
-html,
-body {
-  height: 100%;
-  font-family: Roboto, sans-serif;
-}
-
-ul,
-ol {
-  list-style: none;
-}
 
 .navbar {
   display: flex;
   width: 100%;
-  padding: 12px 160px;
+  padding: 12px 16px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $grey-3;
@@ -62,6 +43,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   &--primary {
     background-color: $orange;
@@ -72,5 +54,11 @@ ol {
     background-color: white;
     color: black;
     border: 1px solid $grey-0;
+  }
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    padding: 12px 160px;
   }
 }
