@@ -110,6 +110,7 @@ h6 {
 }
 .hero__title {
   font-size: 32px;
+  line-height: 48px;
 }
 .hero__title--highlight {
   color: #ec7700;
@@ -124,6 +125,9 @@ h6 {
   display: flex;
   align-items: flex-start;
   gap: 16px;
+}
+.hero__feature {
+  line-height: 24px;
 }
 .hero__join {
   display: flex;
@@ -213,6 +217,7 @@ h6 {
 .hero__privacy-policy {
   color: #aeaeae;
   width: 240px;
+  line-height: 20px;
 }
 .hero__login {
   color: #54565a;
@@ -278,6 +283,7 @@ h6 {
   }
   .hero__title {
     font-size: 48px;
+    line-height: normal;
   }
   .hero__rating-wrapper--mobile {
     display: none;
@@ -293,6 +299,9 @@ h6 {
   .hero__bullet {
     font-size: 20px;
     align-items: center;
+  }
+  .hero__feature {
+    line-height: 32px;
   }
   .hero__join {
     padding: 40px 40px 24px 40px;

@@ -82,6 +82,7 @@
 
   &__title {
     font-size: 32px;
+    line-height: 48px;
 
     &--highlight {
       color: $orange;
@@ -99,6 +100,10 @@
     display: flex;
     align-items: flex-start;
     gap: 16px;
+  }
+
+  &__feature {
+    line-height: 24px;
   }
 
   &__join {
@@ -200,6 +205,7 @@
   &__privacy-policy {
     color: $grey-1;
     width: 240px;
+    line-height: 20px;
   }
 
   &__login {
@@ -275,6 +281,7 @@
 
     &__title {
       font-size: 48px;
+      line-height: normal;
     }
 
     &__rating-wrapper {
@@ -296,6 +303,10 @@
     &__bullet {
       font-size: 20px;
       align-items: center;
+    }
+
+    &__feature {
+      line-height: 32px;
     }
 
     &__join {
