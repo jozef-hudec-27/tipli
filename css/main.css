@@ -7,6 +7,7 @@
           appearance: none;
   outline: none;
   border: none;
+  line-height: normal;
 }
 
 button {
@@ -140,7 +141,7 @@ h6 {
 .hero__subtitle {
   font-size: 20px;
   font-weight: 600;
-  color: #1e1e1e;
+  color: #54565a;
 }
 .hero__register-options {
   width: 100%;
@@ -239,6 +240,10 @@ h6 {
   align-items: flex-start;
   gap: 12px;
 }
+.hero__rating-wrapper--desktop {
+  margin-top: 40px;
+  display: none;
+}
 .hero__rating-social-icon {
   width: 32px;
 }
@@ -261,4 +266,38 @@ h6 {
 }
 .hero__rating-sub--highlight {
   color: #47566e;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 164px;
+    padding: 84px 0 0 0;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__rating-wrapper--mobile {
+    display: none;
+  }
+  .hero__rating-wrapper--desktop {
+    display: flex;
+  }
+  .hero__content {
+    justify-content: center;
+    gap: 40px;
+    padding: 52px 0 0 0;
+  }
+  .hero__join {
+    width: 400px;
+  }
+  .hero__bullet {
+    font-size: 20px;
+    align-items: center;
+  }
+  .hero__bonus {
+    background-color: #61a60e;
+    color: white;
+  }
 }

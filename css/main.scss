@@ -118,7 +118,7 @@
   &__subtitle {
     font-size: 20px;
     font-weight: 600;
-    color: #1e1e1e;
+    color: $grey-0;
   }
 
   &__register-options {
@@ -229,6 +229,11 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
+
+    &--desktop {
+      margin-top: 40px;
+      display: none;
+    }
   }
 
   &__rating-social-icon {
@@ -256,6 +261,49 @@
 
     &--highlight {
       color: $grey-2;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 164px;
+    padding: 84px 0 0 0;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__rating-wrapper {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: flex;
+      }
+    }
+
+    &__content {
+      justify-content: center;
+      gap: 40px;
+      padding: 52px 0 0 0;
+    }
+
+    &__join {
+      width: 400px;
+    }
+
+    &__bullet {
+      font-size: 20px;
+      align-items: center;
+    }
+
+    &__bonus {
+      background-color: $green;
+      color: white;
     }
   }
 }
