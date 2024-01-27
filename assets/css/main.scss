@@ -25,18 +25,13 @@
     line-height: 24px;
   }
 
-  &__register,
-  &__login {
+  &__link {
     height: 40px;
     padding: 0px 16px;
-  }
 
-  &__register {
-    font-weight: 500;
-  }
-
-  &__login {
-    font-weight: 400;
+    &--register {
+      font-weight: 500;
+    }
   }
 }
 

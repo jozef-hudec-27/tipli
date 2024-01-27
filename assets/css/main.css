@@ -86,15 +86,12 @@ h6 {
   font-size: 14px;
   line-height: 24px;
 }
-.navbar__register, .navbar__login {
+.navbar__link {
   height: 40px;
   padding: 0px 16px;
 }
-.navbar__register {
+.navbar__link--register {
   font-weight: 500;
-}
-.navbar__login {
-  font-weight: 400;
 }
 
 @media (min-width: 640px) {
