@@ -7,6 +7,15 @@
   border: none;
 }
 
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+    color: inherit;
+}
+
 html,
 body {
   height: 100%;
